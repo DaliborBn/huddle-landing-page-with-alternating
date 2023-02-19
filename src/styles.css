@@ -66,7 +66,10 @@
   filter: invert(17%) sepia(68%) saturate(6538%) hue-rotate(311deg) brightness(92%) contrast(112%);
 }
 .my-transition {
-  @apply transition-all ease-out duration-300 hover:opacity-70
+  @apply transition-all ease-out duration-300
+}
+.btn-transition {
+  @apply my-transition hover:opacity-70
 }
 .max-width {
   @apply md:max-w-[1200px] md:mx-auto
