@@ -27,13 +27,13 @@
   @apply w-full px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
 }
 .image {
-  @apply w-full m-auto transition-all ease-out duration-300 cursor-pointer scale-90 hover:scale-100
+  @apply w-full m-auto transition-all ease-out duration-300 cursor-pointer md:scale-90 md:hover:scale-100
 }
 .section-about {
   @apply text-center px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
 }
 .section-h2 {
-  @apply text-xl font-poppins font-semibold md:text-left lg:text-2xl xl:text-3xl
+  @apply text-base font-poppins font-semibold xs:text-xl md:text-left lg:text-2xl xl:text-3xl
 }
 .section-p {
   @apply text-sm font-opensans text-grayish-blue mt-5 md:text-left lg:text-base xl:text-lg
@@ -42,7 +42,7 @@
   @apply flex flex-col w-full bg-very-dark-cyan text-very-pale-cyan mt-36 px-5 pb-12 xs:px-10 sm:px-20 md:px-10
 }
 .footer-banner {
-  @apply flex-col-center -mt-20 xs:-mt-24 w-full bg-white rounded-section shadow-banner-btn-shadow px-3 py-10 sm:max-w-[500px] sm:mx-auto md:max-w-[600px]
+  @apply flex-col-center -mt-20 xs:-mt-24 w-full bg-white rounded-section shadow-banner-btn-shadow px-2 py-6 sm:max-w-[500px] sm:mx-auto md:py-10 md:max-w-[600px]
 }
 .footer-logo {
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
