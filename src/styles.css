@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply w-full bg-very-pale-cyan bg-[url('./img/bg-hero-mobile.svg')] bg-no-repeat bg-center bg-cover mb-16 p-5 xs:p-10 sm:px-20 md:bg-[url('./img/bg-hero-desktop.svg')] md:mb-24 md:px-10
+}
+.pink-btn {
+  @apply px-2 py-3 bg-pink text-sm text-very-pale-cyan font-semibold leading-[1.5] rounded-full overflow-hidden
+}
+.main-section {
+  @apply w-full flex-col-center px-5 xs:px-10 sm:px-20 md:px-10
+}
+.section {
+  @apply w-full rounded-section pb-10 mb-10 shadow-section flex-col-center md:flex-row max-width
+}
+.rounded-section {
+  @apply rounded-lg overflow-hidden
+}
+.flex-col-center {
+  @apply flex flex-col justify-center items-center
+}
+.section-img {
+  @apply w-full px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
+}
+.image {
+  @apply w-full m-auto transition-all ease-out duration-300 cursor-pointer scale-90 hover:scale-100
+}
+.section-about {
+  @apply text-center px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
+}
+.section-h2 {
+  @apply text-xl font-poppins font-semibold md:text-left lg:text-2xl xl:text-3xl
+}
+.section-p {
+  @apply text-sm font-opensans text-grayish-blue mt-5 md:text-left lg:text-base xl:text-lg
+}
+.footer {
+  @apply flex flex-col w-full bg-very-dark-cyan text-very-pale-cyan mt-36 px-5 pb-12 xs:px-10 sm:px-20 md:px-10
+}
+.footer-banner {
+  @apply flex-col-center -mt-20 xs:-mt-24 w-full bg-white rounded-section shadow-banner-btn-shadow px-3 py-10 sm:max-w-[500px] sm:mx-auto md:max-w-[600px]
+}
+.footer-logo {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
+}
+.footer-nav-social {
+  @apply md:flex md:flex-row md:justify-between md:w-[60%] md:ml-[6%]
+}
+.footer-nav {
+  @apply flex flex-col text-base xs:items-center md:items-start
+}
+.footer-nav-item {
+  @apply mb-4 hover:underline
+}
+.social {
+  @apply flex flex-row justify-center items-center w-full mb-6 md:self-start md:justify-start md:mb-0
+}
+.social img {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
+}
+.social img:hover {
+  filter: invert(17%) sepia(68%) saturate(6538%) hue-rotate(311deg) brightness(92%) contrast(112%);
+}
+.my-transition {
+  @apply transition-all ease-out duration-300 hover:opacity-70
+}
+.max-width {
+  @apply md:max-w-[1200px] md:mx-auto
+}
