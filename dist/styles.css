@@ -722,20 +722,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
-}
-
-.ease-out{
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
 .header{
   margin-bottom: 4rem;
   width: 100%;
@@ -1060,13 +1046,7 @@ video {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-}
 
-.footer-logo {
-  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
-}
-
-@media (min-width: 768px){
   .footer-nav-social{
     margin-left: 6%;
     display: flex;
