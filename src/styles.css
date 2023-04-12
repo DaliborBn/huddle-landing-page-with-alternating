@@ -9,7 +9,7 @@
   @apply w-full bg-very-pale-cyan bg-[url('./img/bg-hero-mobile.svg')] bg-no-repeat bg-center bg-cover mb-16 p-5 xs:p-10 sm:px-20 md:bg-[url('./img/bg-hero-desktop.svg')] md:mb-24 md:px-10
 }
 .pink-btn {
-  @apply px-2 py-3 bg-pink text-sm text-very-pale-cyan font-semibold leading-[1.5] rounded-full overflow-hidden
+  @apply px-2 py-3 bg-pink text-sm text-very-pale-cyan font-semibold leading-normal rounded-full overflow-hidden
 }
 .main-section {
   @apply w-full flex-col-center px-5 xs:px-10 sm:px-20 md:px-10
@@ -27,13 +27,13 @@
   @apply w-full px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
 }
 .image {
-  @apply w-full m-auto transition-all ease-out duration-300 cursor-pointer md:scale-90 md:hover:scale-100
+  @apply w-full m-auto transition-all ease-out duration-500 cursor-pointer md:scale-90
 }
 .section-about {
   @apply text-center px-10 mt-10 md:w-1/2 md:pl-12 md:pr-6 lg:pl-20 lg:pr-8
 }
 .section-h2 {
-  @apply text-base font-poppins font-semibold xs:text-xl md:text-left lg:text-2xl xl:text-3xl
+  @apply text-[1.2rem] font-poppins font-semibold xs:text-xl md:text-left lg:text-2xl xl:text-3xl
 }
 .section-p {
   @apply text-sm font-opensans text-grayish-blue mt-5 md:text-left lg:text-base xl:text-lg
@@ -51,23 +51,35 @@
   @apply flex flex-col text-base xs:items-center md:items-start
 }
 .footer-nav-item {
-  @apply mb-4 hover:underline
+  @apply mb-4
 }
 .social {
   @apply flex flex-row justify-center items-center w-full mb-6 md:self-start md:justify-start md:mb-0
 }
-.social img {
-  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(310deg) brightness(112%) contrast(101%);
-}
-.social img:hover {
-  filter: invert(17%) sepia(68%) saturate(6538%) hue-rotate(311deg) brightness(92%) contrast(112%);
+.social a {
+  color: white;
 }
 .my-transition {
   @apply transition-all ease-out duration-300
 }
 .btn-transition {
-  @apply my-transition hover:opacity-70
+  @apply my-transition
 }
 .max-width {
   @apply md:max-w-[1200px] md:mx-auto
+}
+
+@media (hover: hover) {
+  .btn-transition:hover {
+    opacity: 0.7;
+  }
+  .image:hover {
+    transform: scale(1);
+  }
+  .footer-nav-item:hover {
+    text-decoration: underline;
+  }
+  .social a:hover {
+    color: hsl(322, 100%, 66%);
+  }
 }
